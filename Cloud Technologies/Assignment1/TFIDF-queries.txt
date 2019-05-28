@@ -1,0 +1,18 @@
+add jar hivemall-core-0.4.2-rc.2-with-dependencies.jar;
+source define-all.hive;
+
+
+create temporary macro max2(x INT, y INT) if(x>y,x,y);
+create temporary macro tfidf(tf FLOAT, df_t INT, n_docs INT) tf * (log(10, CAST(n_docs as FLOAT)/max2(1,df_t)) + 1.0);
+create table tf_table as select owneruserid,score, body from userposts order by score desc limit 10;
+create view exploded as select owneruserid, word from tf_table LATERAL VIEW explode(tokenize(body, True)) t as word where not is_stopword(word);
+
+create view term_frequency as select owneruserid, word, freq from (select owneruserid, tf(word) as word2freq from exploded group by owneruserid) t LATERAL VIEW explode(word2freq) t2 as word, freq;
+
+create or replace view document_frequency as select word, count(distinct owneruserid) docs from exploded group by word;
+
+select count(owneruserid) from tf_table;
+
+set hivevar:n_docs=10;
+
+create or replace view tfidf as select tf.owneruserid,  tf.word, tfidf(tf.freq, df.docs, ${n_docs}) as tfidf from  term_frequency tf  JOIN document_frequency df ON (tf.word = df.word) order by tfidf desc;

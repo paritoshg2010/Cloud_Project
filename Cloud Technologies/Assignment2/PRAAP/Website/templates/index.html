@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRAAP</title>
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Favicons
+    ================================================== -->
+<link rel="shortcut icon" href={{url_for('static',filename="img/favicon.ico")}} type="image/x-icon">
+<link rel="apple-touch-icon" href={{url_for('static',filename="img/apple-touch-icon.png")}}>
+<link rel="apple-touch-icon" sizes="72x72" href={{url_for('static',filename="img/apple-touch-icon-72x72.png")}}>
+<link rel="apple-touch-icon" sizes="114x114" href={{url_for('static',filename="img/apple-touch-icon-114x114.png")}}>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" type="text/css"  href={{url_for('static',filename="css/bootstrap.css")}}>
+<link rel="stylesheet" type="text/css" href={{url_for('static',filename="fonts/font-awesome/css/font-awesome.css")}}>
+
+<!-- Stylesheet
+    ================================================== -->
+<link rel="stylesheet" type="text/css"  href={{url_for('static',filename="css/style.css")}}>
+<link href="https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Rochester" rel="stylesheet">
+
+
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+<!-- Navigation
+    ==========================================-->
+<nav id="menu" class="navbar navbar-default navbar-fixed-top">
+  <div class="container"> 
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+    </div>
+    
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="#features" class="page-scroll">Useful Reviews</a></li>
+        <li><a href="#about" class="page-scroll">About App</a></li>
+        <li><a href="#contact" class="page-scroll">Write Review</a></li>
+        <li><a href="#restaurant-menu" class="page-scroll">Latest Reviews</a></li>
+        <li><a href="#team" class="page-scroll">Team</a></li>
+        
+      </ul>
+    </div>
+    <!-- /.navbar-collapse --> 
+  </div>
+</nav>
+<!-- Header -->
+<header id="header">
+  <div class="intro">
+    <div class="overlay">
+      <div class="container">
+        <div class="row">
+          <div class="intro-text">
+            <h1 style="font-family:French Script MT;">PRAA</h1>
+            <p>Productive Reviews Affirmation App</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- Useful Review Section -->
+<div id="features" class="text-center">
+  <div class="container">
+    <div class="section-title">
+      <h2>Useful Reviews</h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-4">
+        <div class="features-item">
+          <h3>Review 1</h3>
+          <img src={{url_for('static',filename="img/specials/1.jpg")}} class="img-responsive" alt="">
+          <p style="text-align:justify;">"My son loves spaghetti so I didn't hesitate ordering this for him. He says they are great. I have tried them myself and they are delicious.  Just open and pop them in the microwave. It is very easy. The best thing about ordering from Amazon grocery is that they deliver to your door. If you have a loved one that lives far away and may have limited transportation this is the answer. Just order what you want them to have and Amazon takes care of the rest." - <b>Jeanne</b> </p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="features-item">
+          <h3>Review 2</h3>
+          <img src={{url_for('static',filename="img/specials/2.jpg")}} class="img-responsive" alt="">
+          <p style="text-align:justify;">"It was almost a 'love at first bite' - the perfectly roasted almond with a nice thin layer of pure flavorful cocoa on the top. You can smell the cocoa as soon as you open the canister - making you want to take a bite. Tasting this item it like tasting and enjoying flavorful pure raw cocoa with crunchy almonds in the center.  Get yourself a box and see for yourself what real cocoa + almonds is ! Where this product loses a star is in its packaging - the external sleeve is kind of comes in one piece, so if you try to remove the lid, the external sleeve kind of tends to come off fully - so careful when you are removing the external sleeve for the canister." - <b>Ram</b></p>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <div class="features-item">
+          <h3>Review3</h3>
+          <img src={{url_for('static',filename="img/specials/3.jpg")}} class="img-responsive" alt="">
+          <p style="text-align:justify;">"I don't know if it's the cactus or the tequila or just the unique combination of ingredients, but the flavour of this hot sauce makes it one of a kind!  We picked up a bottle once on a trip we were on and brought it back home with us and were totally blown away!  When we realized that we simply couldn't find it anywhere in our city we were bummed. Now, because of the magic of the internet, we have a case of the sauce and are ecstatic because of it. If you love hot sauce..I mean really love hot sauce, but don't want a sauce that tastelessly burns your throat, grab a bottle of Tequila Picante Gourmet de Inclan.  Just realize that once you taste it, you will never want to use any other sauce. Thank you for the personal, incredible service!" - <b>Canadian Fan</b></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- About Section -->
+<div id="about">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-12 col-md-6 about-img"> </div>
+      <div class="col-xs-12 col-md-3 col-md-offset-1">
+        <div class="about-text">
+          <div class="section-title">
+            <h2>About App</h2>
+          </div>
+          <p>The reviews helps the user to make better decisions regarding their purchase, and if you can get the affirmation on that reviews if that would be useful to others or not, that would be like cherry on the cake. </p>
+          <p>This app helps in validating if the review provided by user will be helpful to others or not. From the past reviews, we have build machine learning model which verify the reviews and encourage the users to provide the helpful reviews.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Write Review Section -->
+<section id="review_form"> 
+<div id="contact" class="text-center">
+    <div class="container">
+    <div class="section-title text-center">
+       
+      <h3>Write Review</h3>
+    </div>
+    <div class="col-md-8 col-md-offset-2">
+
+      {% with messages = get_flashed_messages(with_categories=true) %}
+            {% if messages %}
+              {% for category, message in messages %}
+                <div class="alert alert-{{ category }}">
+                  {{ message }}
+                </div>
+              {% endfor %}
+            {% endif %}
+          {% endwith %}
+          {% block content %}{% endblock %}
+
+
+
+      <form method="POST" name="sentMessage" id="contactForm" novalidate>
+        {{ form.hidden_tag() }}
+        <fieldset class="form-group">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              {{ form.username.label(class="form-control-label") }}
+
+                    {% if form.username.errors %}
+                        {{ form.username(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="form-control form-control-md") }}
+                    {% endif %}
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="form-group">
+              {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-md") }}
+                    {% endif %}
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          {{ form.review.label(class="form-control-label") }}
+                    {% if form.review.errors %}
+                        {{ form.review(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.review.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.review(class="form-control form-control-md", rows="5") }}
+                    {% endif %}
+        </div>
+        <div id="success"></div>
+        </fieldset>
+        <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+      </form>
+
+    </div>
+  </div>
+</div>
+</section>
+
+
+
+
+<!-- Latest Review Section -->
+<div id="restaurant-menu">
+  <div class="container">
+    <div class="section-title text-center">
+      <h2>Latest Reviews</h2>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6">
+        <div class="menu-section">
+          <div class="menu-item">
+            <div class="menu-item-name">Natalia Corres</div>
+            <div class="menu-item-description">"This is a confection that has been around a few centuries.  It is a light, pillowy citrus gelatin with nuts - in this case Filberts. And it is cut into tiny squares and then liberally coated with powdered sugar.  And it is a tiny mouthful of heaven.  Not too chewy, and very flavorful.  I highly recommend this yummy treat.  If you are familiar with the story of C.S. Lewis' "   &#128077;</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name">Patricia</div>
+            <div class="menu-item-description">"I had not realized until just now that these FERRERO ROCHER HAZELNUT CHOCOLATES 48 COUNT GIFT BOX, were made by the SAME Ferrero Company that makes ""Nutella"" Hazelnut-Chocolate spread"      &#128078;</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name">NovaKing</div>
+            <div class="menu-item-description">"I really don't know much about this stuff, but it seems like it did what it was supposed to do... "      &#128078;</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name">Corby James</div>
+            <div class="menu-item-description">"Instant oatmeal can become soggy the minute the water hits the bowl. McCann's Instant Oatmeal holds its texture, has excellent flavor, and is good for you all at the same time. McCann's regular oat meal is excellent, too, but may take a bit longer to prepare than most have time for in the morning. This is the best instant brand I've ever eaten, and a very close second to the non-instant variety. McCann's Instant Irish Oatmeal, Variety Pack of Regular, Apples & Cinnamon, and Maple & Brown Sugar, 10-Count Boxes (Pack of 6)"   &#128077;</div>
+          </div>
+          
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6">
+        <div class="menu-section">
+          <div class="menu-item">
+            <div class="menu-item-name">Valueminded</div>
+            <div class="menu-item-description">"Why is this in my Quick Picks?  I don't even own a dog!  But just from reading the ingredients, I say give this stuff a pass.  It has potato, tomato, peas, blueberries and raspberries in it, none of which are a part of a dog's natural diet. Canines of all kinds get all the nutrition required in the wild just from eating meat.  Anything else is just filler."      &#128078;</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name">Megan</div>
+            <div class="menu-item-description">"This is a good instant oatmeal from the best oatmeal brand.  It uses cane sugar instead of high fructouse corn syrup, so not only does it have a better sweetness, but some doctors now say that this form of sugar is better for you.  Great on a cold morning when you don't have time to make McCann's Steel Cut Oats.  The apple cinnamon is the best but the maple and brown sugar or the regular are good too.  Plus they don't require doctoring to actually tell the three flavors apart. "   &#128077;</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name">R. James</div>
+            <div class="menu-item-description">"Right now I'm mostly just sprouting this so my cats can eat the grass. They love it. I rotate it around with Wheatgrass and Rye too"   &#128077;</div>
+          </div>
+          <div class="menu-item">
+            <div class="menu-item-name">jrtsjukejoint4 </div>
+            <div class="menu-item-description">"Influencing youngsters to think smoking is o.k. comes at an unbearable price to pay.<br />I had these as a kid, and am not a smoker. This candy sends a horrible and mixed message to kids. I'm sure the one who came up with the idea had something to do with one of the companies that sell smokes."      &#128078;</div>
+          </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Gallery Section -->
+<div id="gallery">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src={{url_for('static',filename="img/gallery/01.jpg")}} class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src={{url_for('static',filename="img/gallery/02.jpg")}} class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src={{url_for('static',filename="img/gallery/03.jpg")}} class="img-responsive" alt=""></div>
+      </div>
+      <div class="col-xs-6 col-md-3">
+        <div class="gallery-item"> <img src={{url_for('static',filename="img/gallery/04.jpg")}} class="img-responsive" alt=""></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!-- Team Section -->
+<div id="team">
+  <div class="container">
+    <div id="row">
+      <div class="col-md-6">
+        <div class="col-md-10 col-md-offset-1">
+          <div class="section-title">
+            <h2>Meet Our Team</h2>
+          </div>
+          <p><b>Aditya Kumar Yadav</b> </br>aditya.yadav3@mail.dcu.ie</br>
+             M.Sc. in Data Analytics</br></p>
+          <p><b></br>Alekhya</b> </br>alekhya.singh7@mail.dcu.ie </br>
+             M.Sc. in Data Analytics</p>
+          <p><b></br>Kashyap Krishnamurthy</b> </br>kashyap.krishnamurthy2@mail.dcu.ie</br>
+             M.Sc. in Data Analytics</br></p>
+          <p><b></br>Paritosh Gupta</b> </br>paritosh.gupta3@mail.dcu.ie</br>
+             M.Sc. in Data Analytics</br></p>
+           </div>
+      </div>
+      <div class="col-md-6">
+        <div class="team-img"><img src={{url_for('static',filename="img/team.jpg")}} alt="..."></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div id="footer">
+  <div class="container text-center">
+    <div class="col-md-6">
+      <p>&copy; All rights reserved.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="social">
+        <ul>
+          <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+          <li><a href="#"><i class="fa fa-youtube"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script type="text/javascript" src={{url_for('static',filename="js/jquery.1.11.1.js")}}></script> 
+<script type="text/javascript" src={{url_for('static',filename="js/bootstrap.js")}}></script> 
+<script type="text/javascript" src={{url_for('static',filename="js/SmoothScroll.js")}}></script> 
+<script type="text/javascript" src={{url_for('static',filename="js/jqBootstrapValidation.js")}}></script> 
+<script type="text/javascript" src={{url_for('static',filename="js/main.js")}}></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,5 @@
+Below are the steps to run the flask web server
+These command need to run from current directory of FlaskApp.py
+
+Step 1: Export FLASK_APP=FlaskApp 
+Step 2: python FlaskApp.py

@@ -1,0 +1,11 @@
+CREATE TABLE userposts (id BIGINT ,score BIGINT, viewCount BIGINT, body STRING, title STRING, owneruserid BIGINT, ownerdisplayname STRING) row format delimited fields terminated by ',';
+
+LOAD DATA INPATH '/cloud/assignment1/resultset/part*' INTO TABLE userposts;
+
+
+select id, score, title from userposts order by score desc limit 10;
+
+select owneruserid, ownerdisplayname, score from userposts order by score desc limit 10;
+
+select count(distinct owneruserid) from userposts where body like '%hadoop%'
+-----------------------------------------------
